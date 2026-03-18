@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiny Bites — Healthy Eating for Babies & Toddlers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🥦 Tiny Bites</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tips">Nutrition Tips</a></li>
+        <li><a href="#stages">By Age</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">Trusted by 10,000+ parents</span>
+      <h1>Nourish Their<br><span class="highlight">Tiny World</span></h1>
+      <p>Science-backed nutrition guidance and hand-picked products to help your baby and toddler build healthy eating habits from day one.</p>
+      <div class="hero-btns">
+        <button onclick="document.getElementById('tips').scrollIntoView({behavior:'smooth'})">Explore Tips</button>
+        <button class="btn-outline" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Browse Shop</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-blob">
+        <div class="food-icons">
+          <span>🥕</span><span>🫐</span><span>🥑</span>
+          <span>🍠</span><span>🥦</span><span>🍌</span>
+          <span>🍳</span><span>🫛</span><span>🍓</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat"><strong>0–6 mo</strong><span>Breast milk / formula only</span></div>
+    <div class="stat"><strong>6–12 mo</strong><span>First solid foods introduced</span></div>
+    <div class="stat"><strong>1–3 yrs</strong><span>Expanding flavors & textures</span></div>
+    <div class="stat"><strong>1,000</strong><span>Days that shape lifelong health</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container two-col">
+      <div class="about-text">
+        <h2>Why Early Nutrition Matters</h2>
+        <p>The first 1,000 days of life — from conception through age two — are a critical window for brain development, immune health, and lifelong relationship with food. What babies eat (and how they're offered food) creates lasting habits.</p>
+        <p>At <strong>Tiny Bites</strong> we combine pediatric nutrition research with practical, real-world advice so every mealtime is a joy rather than a struggle.</p>
+        <ul class="check-list">
+          <li>✅ Pediatrician-reviewed content</li>
+          <li>✅ Age-appropriate guidance</li>
+          <li>✅ No fear-based messaging</li>
+          <li>✅ Allergy-introduction support</li>
+        </ul>
+      </div>
+      <div class="about-cards">
+        <div class="mini-card orange">🧠 Brain Development</div>
+        <div class="mini-card green">💪 Strong Immunity</div>
+        <div class="mini-card blue">❤️ Gut Health</div>
+        <div class="mini-card pink">😄 Happy Mealtimes</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUTRITION TIPS -->
+  <section class="tips section bg-soft" id="tips">
+    <div class="container">
+      <div class="section-header">
+        <h2>Healthy Eating Tips</h2>
+        <p>Simple, evidence-based principles for raising adventurous little eaters.</p>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">🌈</div>
+          <h3>Eat the Rainbow</h3>
+          <p>Offer fruits and vegetables in as many colors as possible. Different colors mean different nutrients, antioxidants, and phytonutrients essential for growth.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🔁</div>
+          <h3>Repeated Exposure</h3>
+          <p>It can take 10–15 exposures before a toddler accepts a new food. Keep offering without pressure — neutral, relaxed presentation is key.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">👨‍👩‍👧</div>
+          <h3>Family Meals Together</h3>
+          <p>Babies learn by watching. Eating the same foods together removes the "other food" stigma and builds positive food associations.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🚫🍬</div>
+          <h3>Delay Added Sugar & Salt</h3>
+          <p>Avoid added sugars and sodium for babies under 12 months. Their kidneys can't process excess salt, and sweet preferences form quickly.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🤲</div>
+          <h3>Baby-Led Weaning</h3>
+          <p>Letting babies self-feed soft finger foods from around 6 months builds motor skills, independence, and reduces picky eating later.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">💧</div>
+          <h3>Hydration Matters</h3>
+          <p>Introduce small sips of water with solid meals at 6 months. Avoid juice — whole fruit provides the same nutrients with added fiber.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGES BY AGE -->
+  <section class="stages section" id="stages">
+    <div class="container">
+      <div class="section-header">
+        <h2>Feeding by Age</h2>
+        <p>Every stage brings new milestones and new foods to explore.</p>
+      </div>
+      <div class="stages-timeline">
+        <div class="stage-card">
+          <div class="stage-age">0–6<br>months</div>
+          <div class="stage-info">
+            <h3>Milk Stage</h3>
+            <p>Breast milk or formula provides 100% of nutritional needs. No water, juice, or solids needed yet. Focus on responsive feeding cues.</p>
+            <div class="stage-foods">🤱 Breast milk &nbsp; 🍼 Formula</div>
+          </div>
+        </div>
+        <div class="stage-card">
+          <div class="stage-age">6–9<br>months</div>
+          <div class="stage-info">
+            <h3>First Foods</h3>
+            <p>Purées or soft mashed foods. Introduce iron-rich foods first (meat, lentils, fortified cereals). Offer one new food every 3–5 days.</p>
+            <div class="stage-foods">🥕 Purées &nbsp; 🫘 Lentils &nbsp; 🍗 Meat</div>
+          </div>
+        </div>
+        <div class="stage-card">
+          <div class="stage-age">9–12<br>months</div>
+          <div class="stage-info">
+            <h3>Finger Foods</h3>
+            <p>Soft finger foods cut to pea-size. Introduce common allergens (peanut, egg, dairy). Encourage self-feeding to build pincer grasp.</p>
+            <div class="stage-foods">🥑 Avocado &nbsp; 🍳 Egg &nbsp; 🧀 Cheese</div>
+          </div>
+        </div>
+        <div class="stage-card">
+          <div class="stage-age">12–24<br>months</div>
+          <div class="stage-info">
+            <h3>Family Foods</h3>
+            <p>Transition to whole cow's milk. Join family meals with adapted textures. Expect picky phases — stay calm and keep variety on offer.</p>
+            <div class="stage-foods">🥦 Broccoli &nbsp; 🍝 Pasta &nbsp; 🫐 Berries</div>
+          </div>
+        </div>
+        <div class="stage-card">
+          <div class="stage-age">2–3<br>years</div>
+          <div class="stage-info">
+            <h3>Toddler Explorer</h3>
+            <p>Independence peaks — toddlers assert preferences strongly. Offer structured meals/snacks, maintain routines, and keep meals low-pressure.</p>
+            <div class="stage-foods">🌽 Corn &nbsp; 🍠 Sweet potato &nbsp; 🥩 Strips</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section class="shop section bg-soft" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shop Tiny Bites</h2>
+        <p>Carefully selected tools and resources to make healthy eating easier and more fun.</p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-badge">Best Seller</div>
+          <div class="product-img">🥄</div>
+          <h3>Soft-Tip Silicone Spoons</h3>
+          <p class="product-desc">BPA-free, gentle on emerging gums. Temperature-sensitive color-change lets you know if food is too hot.</p>
+          <div class="product-meta">
+            <span class="price">$14.99</span>
+            <span class="age-tag">4–18 mo</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Soft-Tip Silicone Spoons', 14.99)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge new">New</div>
+          <div class="product-img">🧁</div>
+          <h3>First Foods Cookbook</h3>
+          <p class="product-desc">80 purée and finger food recipes organized by developmental stage, with allergen introduction schedule.</p>
+          <div class="product-meta">
+            <span class="price">$24.99</span>
+            <span class="age-tag">6 mo – 3 yr</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('First Foods Cookbook', 24.99)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🍽️</div>
+          <h3>Divided Suction Plate Set</h3>
+          <p class="product-desc">3-compartment plates with strong suction base. Keeps foods separated for picky eaters without the mess.</p>
+          <div class="product-meta">
+            <span class="price">$19.99</span>
+            <span class="age-tag">6 mo – 4 yr</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Divided Suction Plate Set', 19.99)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🎨</div>
+          <h3>Rainbow Veggie Teether Set</h3>
+          <p class="product-desc">Food-shaped silicone teethers that double as play food. Shapes carrots, broccoli, and corn for early food familiarity.</p>
+          <div class="product-meta">
+            <span class="price">$12.99</span>
+            <span class="age-tag">3–18 mo</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Rainbow Veggie Teether Set', 12.99)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">Popular</div>
+          <div class="product-img">📚</div>
+          <h3>Tiny Bites Nutrition Guide</h3>
+          <p class="product-desc">A 60-page printable guide covering nutrient needs, allergy introduction, meal schedules, and toddler feeding strategies.</p>
+          <div class="product-meta">
+            <span class="price">$9.99</span>
+            <span class="age-tag">0 – 3 yr</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Tiny Bites Nutrition Guide', 9.99)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🧺</div>
+          <h3>Starter Bundle</h3>
+          <p class="product-desc">Spoons + Plate Set + Nutrition Guide bundled at a discount. Everything you need to get started on solid foods with confidence.</p>
+          <div class="product-meta">
+            <span class="price">$39.99</span>
+            <span class="price-original">$44.97</span>
+            <span class="age-tag">6 mo+</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Starter Bundle', 39.99)">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CART SIDEBAR -->
+  <div id="cart-overlay" class="cart-overlay" onclick="closeCart()"></div>
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart 🛒</h3>
+      <button onclick="closeCart()" class="cart-close">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <strong id="cart-total">$0.00</strong></div>
+      <button class="checkout-btn" onclick="alert('Checkout coming soon! Thank you for your interest.')">Checkout</button>
+    </div>
+  </div>
+
+  <!-- CART BUTTON FLOATING -->
+  <button class="floating-cart" onclick="openCart()">
+    🛒 <span id="cart-count">0</span>
+  </button>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container two-col">
+      <div>
+        <h2>Get in Touch</h2>
+        <p>Questions about feeding your little one? Want to suggest a product? We'd love to hear from you.</p>
+        <ul class="contact-info">
+          <li>📧 hello@tinybites.com</li>
+          <li>📞 (555) 123-4567</li>
+          <li>🕐 Mon–Fri, 9am–5pm EST</li>
+        </ul>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Email address" required />
+        <textarea placeholder="Your message..." rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">🥦 Tiny Bites</div>
+        <p>Helping families build healthy food relationships from the very first bite.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tips">Nutrition Tips</a></li>
+          <li><a href="#stages">By Age</a></li>
+          <li><a href="#shop">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Allergen Guide</a></li>
+          <li><a href="#">Meal Plans</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tiny Bites. All rights reserved. | Content is for informational purposes only — always consult your pediatrician.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
