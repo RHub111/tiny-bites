@@ -321,6 +321,60 @@ footer { background: #1a2e1a; color: #ccc; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .stage-age { font-size: 0.88rem; width: 70px; }
 }
+/* ===== FOOD ICON INTERACTIVITY ===== */
+.food-icons span { cursor: pointer; }
+.food-icons span:hover {
+  transform: scale(1.25) translateY(-4px) !important;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+  animation-play-state: paused;
+}
+
+/* ===== FOOD INFO MODAL ===== */
+.food-modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.5); z-index: 500;
+}
+.food-modal-overlay.open { display: block; }
+.food-modal {
+  position: fixed; top: 50%; left: 50%;
+  transform: translate(-50%, -60%) scale(0.92);
+  opacity: 0; pointer-events: none;
+  width: 420px; max-width: 92vw;
+  background: #fff; border-radius: 20px;
+  overflow: hidden; z-index: 600;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  transition: transform .25s ease, opacity .25s ease;
+}
+.food-modal.open {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1; pointer-events: auto;
+}
+.food-modal-close {
+  position: absolute; top: 12px; right: 14px;
+  background: rgba(255,255,255,0.25); border: none;
+  color: #fff; font-size: 1.1rem; width: 30px; height: 30px;
+  border-radius: 50%; cursor: pointer; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.fmi-header {
+  padding: 32px 24px 24px; text-align: center; color: #fff;
+}
+.fmi-emoji { font-size: 3.5rem; display: block; margin-bottom: 8px; }
+.fmi-header h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 4px; }
+.fmi-header p { font-size: 0.85rem; opacity: 0.9; }
+.fmi-list {
+  padding: 20px 28px 28px; list-style: none;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.fmi-list li {
+  padding-left: 24px; position: relative;
+  font-size: 0.95rem; color: #444; line-height: 1.5;
+}
+.fmi-list li::before {
+  content: '✓'; position: absolute; left: 0;
+  color: var(--green); font-weight: 700;
+}
+
 @media (max-width: 600px) {
   .nav-links { display: none; }
   .stats-bar { gap: 0; }

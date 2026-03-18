@@ -37,9 +37,9 @@
     <div class="hero-image">
       <div class="hero-blob">
         <div class="food-icons">
-          <span>🥕</span><span>🫐</span><span>🥑</span>
-          <span>🍠</span><span>🥦</span><span>🍌</span>
-          <span>🍳</span><span>🫛</span><span>🍓</span>
+          <span data-food="carrot"      onclick="showFoodInfo('carrot')">🥕</span><span data-food="blueberry"   onclick="showFoodInfo('blueberry')">🫐</span><span data-food="avocado"      onclick="showFoodInfo('avocado')">🥑</span>
+          <span data-food="sweetpotato" onclick="showFoodInfo('sweetpotato')">🍠</span><span data-food="broccoli"    onclick="showFoodInfo('broccoli')">🥦</span><span data-food="banana"       onclick="showFoodInfo('banana')">🍌</span>
+          <span data-food="egg"         onclick="showFoodInfo('egg')">🍳</span><span data-food="peas"        onclick="showFoodInfo('peas')">🫛</span><span data-food="strawberry"  onclick="showFoodInfo('strawberry')">🍓</span>
         </div>
       </div>
     </div>
@@ -334,6 +334,13 @@
       <p>© 2026 Tiny Bites. All rights reserved. | Content is for informational purposes only — always consult your pediatrician.</p>
     </div>
   </footer>
+
+  <!-- FOOD INFO MODAL -->
+  <div id="food-modal-overlay" class="food-modal-overlay" onclick="closeFoodModal()"></div>
+  <div id="food-modal" class="food-modal">
+    <button class="food-modal-close" onclick="closeFoodModal()">✕</button>
+    <div id="food-modal-body"></div>
+  </div>
 
   <script src="app.js"></script>
 </body>
